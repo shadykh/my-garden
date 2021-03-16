@@ -1,0 +1,50 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fabulous Garden</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Fabulous Garden</h1>
+    </header>
+
+    <main>
+        <section>
+        <form id="flowerForm" >
+            <fieldset>
+                <legend>New flower</legend>
+                <label for="flowersName">Name</label>
+                <input type="text" name="flowersName" id="flowersName">
+                <label for="flowerCategory">Image</label>
+                <select name="flowerCategory" id="flowerCategory">
+                   <option value="Alstroemerias">Alstroemerias</option>
+                   <option value="Gardenias">Gardenias</option>
+                   <option value="Orchids">Orchids</option>
+                   <option value="Roses">Roses</option>
+                   <option value="Sunflowers">Sunflowers</option>
+                   <option value="Tulips">Tulips</option>
+                   <option value="Peonies">Peonies</option>
+                </select>
+                <label for="flowerSeason">Season</label>
+                <input type="text" name="flowerSeason" id="flowerSeason">
+                <button id="submitButton" type="submit" >Save</button>
+            </fieldset>
+        </form>
+        <button id="ClearButton" onclick="clearLocalStorage()">Clear LS</button>
+    </section>
+        <div id="tableDiv" ></div>
+    </main>
+
+    <footer>
+        All Rights Reserved 2021 &copy; ASAC
+    </footer>
+
+    <script src="./js/app.js"></script>
+
+</body>
+</html>
